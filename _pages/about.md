@@ -3,6 +3,8 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+From games to AR SDKs, from developer tools to mobile apps, from CI workflows to hand interaction systems for Apple Vision Pro, over my 10-years career I've worked on a wide range of projects.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+I co-founded a game studio, where I built games in Unity and tools for its Editor. Later, I moved to progressively become the primary maintainer of the  Unity Extension for the Vuforia Engine, an AR SDK used by thousands of developers worldwide. Over the years, I've built tools for automating development workflows and optimising CI/CD systems, led the development of the Vuforia Creator app for iOS, and maintained compatibility with many Mixed Reality platforms.
+
+Currently building Aura, a migraine journal app, while deepening my expertise in SwiftUI, Kotlin, and modern cross-platform development.
