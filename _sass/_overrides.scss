@@ -1,0 +1,63 @@
+/*
+   Grid view overrides
+   2-column layout with taller teasers and more spacing
+   ========================================================================== */
+
+.grid__item {
+  margin-bottom: 0;
+
+  width: span(12 of 12);
+
+  &:nth-child(2n + 1) {
+    clear: both;
+    margin-inline-start: 0;
+  }
+
+  &:nth-child(2n + 2) {
+    clear: none;
+    margin-inline-start: 0;
+  }
+
+  .archive__item-teaser {
+    position: relative;
+    height: 12em;
+    max-height: none;
+    margin: 0.5em 0 0.5em;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: -20px; /* overshoot to hide blurred edges */
+      background: inherit;
+      filter: blur(16px);
+      z-index: 0;
+    }
+
+    img {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      object-fit: scale-down;
+      object-position: center;
+    }
+  }
+
+  .archive__item-excerpt {
+    display: block;
+    font-size: $type-size-6;
+    max-height: none;
+  }
+
+  .archive__item {
+    display: flex;
+    flex-direction: column;
+
+    .archive__item-title  { order: 1; }
+    .archive__item-teaser { order: 2; }
+    .page__meta           { order: 3; }
+    .archive__item-excerpt { order: 4; }
+  }
+}
