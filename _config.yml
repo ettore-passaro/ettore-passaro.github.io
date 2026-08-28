@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Ettore Passaro - Portfolio
+title: Ettore Passaro
 email: ettore.passaro@proton.me
 description: >- # this means to ignore newlines until "baseurl:"
   Portfolio of Ettore Passaro, Senior Software Engineer with 10 years of
@@ -34,6 +34,12 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
+
+# Silence Sass deprecation warnings from the remote theme's own stylesheets
+# (color-functions, slash-div, etc.) while still surfacing warnings from our
+# own _sass/_overrides.scss.
+sass:
+  quiet_deps: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -58,9 +64,9 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name : "Ettore Passaro"
-  avatar : "/assets/images/bio-photo.webp"
-  bio : "Senior Software Engineer with 10 years of experience in mobile, SDK, and game development. Passionate about building things that matter."
+  # name: "Ettore Passaro"
+  avatar: "/assets/images/bio-photo.webp"
+  bio: "Senior Software Engineer with 10 years of experience in mobile, SDK, and game development. Passionate about building things that matter."
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
@@ -100,10 +106,3 @@ defaults:
     values:
       layout: single
       author_profile: true
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/

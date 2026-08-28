@@ -7,6 +7,10 @@
   font-size: 16px;
 }
 
+.search-content .search-input {
+  font-size: $type-size-4;
+}
+
 body.toc-vuforia .toc {
   .nav__title {
     background-color: #6cbf4a;
@@ -15,6 +19,28 @@ body.toc-vuforia .toc {
   .active a {
     background-color: #cfefc7;
   }
+}
+
+// Category badge + meta line, shared by article pages (page__meta.html
+// inside .page__meta) and archive cards (archive-single.html).
+.page__meta {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.archive__item-type {
+  padding: 0.3em 0.65em;
+  border-radius: 999px;
+  border: 1px solid rgb(81, 85, 93);
+  background-color: inherit;
+  color: #eaeaea;
+  font-size: $type-size-6;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .grid__item {
