@@ -41,30 +41,15 @@ include:
 sass:
   quiet_deps: true
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
 # Plugins (previously gems:)
 plugins:
   - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
-  - jemoji
   - jekyll-include-cache
 
 author:
-  # name: "Ettore Passaro"
   avatar: "/assets/images/bio-photo.webp"
   bio: "Senior Software Engineer with 10 years of experience in mobile, SDK, and game development. Passionate about building things that matter."
   links:
@@ -96,6 +81,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
+      show_date: true
       comments: true
       share: true
       related: true

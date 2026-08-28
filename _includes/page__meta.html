@@ -27,6 +27,8 @@
       words_per_minute }} {{ site.data.ui-text[locale].minute_read | default: "minute read" }} {% endif %} </span>
       {% endif %}
 
+      {% if document.read_time and document.categories %}<span class="page__meta-sep"></span>{% endif %}
+
       {% if document.categories %}
       <span class="archive__item-type">{{ document.categories | first }}</span>
       {% endif %}
