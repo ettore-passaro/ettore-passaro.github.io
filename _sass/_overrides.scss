@@ -7,6 +7,16 @@
   font-size: 16px;
 }
 
+// Theme dims the sidebar to 75% opacity until hovered; keep it fully
+// visible at all times.
+.sidebar {
+  opacity: 1;
+}
+
+.author__avatar img {
+  max-width: 200px;
+}
+
 .search-content .search-input {
   font-size: $type-size-4;
 }
